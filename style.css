@@ -1,0 +1,22 @@
+:root{--gold:#ffd54f;--blue:#1976d2;--green:#00c853;--red:#e53935}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:radial-gradient(circle at 20% 10%,#2948ff55,transparent 30%),linear-gradient(135deg,#06111f,#102a43,#16002b);color:white;padding:16px;min-height:100vh}
+.app{max-width:900px;margin:auto;background:#ffffff14;border:1px solid #ffffff2e;border-radius:24px;padding:22px;box-shadow:0 12px 40px #0008}
+h1{text-align:center;color:var(--gold);text-shadow:0 0 12px #ffca28}
+.sub{text-align:center;color:#dbeafe;margin-bottom:18px}
+.menu,.result{background:white;color:#152238;border-radius:22px;padding:22px;text-align:center}
+.hud{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.box{background:#00000045;border:1px solid #ffffff26;border-radius:16px;padding:10px;text-align:center}
+.box b{font-size:22px;color:var(--gold)}
+.qcard{background:white;color:#152238;border-radius:22px;padding:20px;margin-top:16px;box-shadow:0 10px 25px #0005}
+.badge{display:inline-block;background:#8b0000;color:white;padding:6px 10px;border-radius:999px;font-size:13px;font-weight:bold}
+.qtitle{font-size:21px;font-weight:bold;margin:14px 0}
+.option{display:block;border:2px solid #dbe4f0;border-radius:14px;padding:12px;margin:9px 0;background:#f8fbff;cursor:pointer}
+.option:hover{background:#eef6ff}
+.good{background:#dcfce7!important;border-color:#22c55e!important;color:#14532d;font-weight:bold}
+.bad{background:#fee2e2!important;border-color:#ef4444!important;color:#991b1b;text-decoration:line-through}
+button{border:0;border-radius:14px;padding:12px 18px;font-size:16px;font-weight:bold;cursor:pointer;margin:6px}
+.main{background:linear-gradient(135deg,#ffd54f,#ff9800);color:#271300}
+.blue{background:var(--blue);color:white}.green{background:var(--green);color:white}
+.feedback{display:none;margin-top:12px;background:#eef6ff;border-left:6px solid #1976d2;border-radius:14px;padding:12px;color:#152238}
+@media(max-width:650px){.hud{grid-template-columns:repeat(2,1fr)}button{width:100%}}
